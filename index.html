@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="full" id="fullBox">
+        <img src="1.jpg" id="f-img" width="300px" height="500px">
+        <span onclick="closeImg()">x</span>
+    </div>
+    <div class="img-gal">
+        <img src="1.jpg" width="184" height="273" onclick="openBox(this.src)">
+        <img src="2.jpg" width="184" height="273" onclick="openBox(this.src)">
+        <img src="3.jpg" width="184" height="273" onclick="openBox(this.src)">
+        <img src="4.jpg" width="184" height="273" onclick="openBox(this.src)">
+        <img src="5.jpg" width="184" height="273" onclick="openBox(this.src)">
+        <img src="6.jpg" width="184" height="273" onclick="openBox(this.src)">
+        <img src="7.jpg" width="184" height="273" onclick="openBox(this.src)">
+        <img src="8.jpg" width="184" height="273" onclick="openBox(this.src)">
+        <img src="9.jpg" width="184" height="273" onclick="openBox(this.src)">
+        <img src="10.jpg" width="184" height="273" onclick="openBox(this.src)">
+    </div>
+    <script>
+        var img = document.getElementById("f-img");
+        function openBox(pic){
+            document.getElementById("fullBox").style.display = "flex";
+            img.src = pic;
+        }
+        function closeImg(){
+            document.getElementById("fullBox").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
